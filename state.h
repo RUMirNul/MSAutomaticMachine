@@ -1,6 +1,8 @@
 //
 // Created by lexac on 22.03.2022.
 //
+#ifndef UNUQMPAUTOMAT_STATE_H
+#define UNUQMPAUTOMAT_STATE_H
 
 #include "string"
 
@@ -10,6 +12,7 @@ class state {
 public:
     state(void);
 
+    //Установка значений объекту
     void set(string in, string stk, string del, string add);
 
     const string &getInputSymbol() const;
@@ -32,4 +35,4 @@ private:
 
 };
 
-
+#endif //UNUQMPAUTOMAT_STATE_H
